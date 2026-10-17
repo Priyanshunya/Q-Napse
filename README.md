@@ -131,7 +131,7 @@ This compresses the LFM chirp energy into a single Dirac-like impulse, achieving
 
 | Subsystem | Industrial Part Number & Specification | UNO Q Interface | Est. Cost (INR) |
 |---|---|---|---|
-| **Master Compute Core** | Qualcomm Arduino® UNO™ Q *(Already Owned by Team Vision.exe)* | Native Dual-Brain | **₹0** *(In Hand)* |
+| **Master Compute Core** | Qualcomm Arduino® UNO™ Q *(Awarded by Hackstar, Arduino Invent the Future)* | Native Dual-Brain | **₹6,000** |
 | **Solid-State RF Front-End** | Dual-Band $2.4/5\text{ GHz}$ $9\text{ dBi}$ Flat Patch + Omni Reference + ADI `HMC849` SPDT Switch | `WIFI` + `GPIO` | ₹2,800 |
 | **Seismic Waveguide Base** | STMicroelectronics `LSM6DSOX` (with Hardware MLC/FSM) on Steel Contact Plate | `JSPI` + Interrupt | ₹950 |
 | **Waterproof Acoustic Array** | 4× Knowles / Infineon (`IM69D130` / `SPH0645`) Differential MEMS Array ($69\text{ dB}$ SNR) | `AUDIO` (I2S/TDM) | ₹1,850 |
@@ -139,7 +139,7 @@ This compresses the LFM chirp energy into a single Dirac-like impulse, achieving
 | **Optical VIO & Laser Lock** | Sony `IMX296` MIPI-CSI-2 Global-Shutter Module + Class-2 $520\text{ nm}$ Green Laser | `CAM` + `GPIO` | ₹4,200 |
 | **Swarm & NTN Transceiver** | Semtech `LR1121` (865 MHz Sub-GHz + 2.4 GHz + S-Band Satellite LoRa NTN) + `u-blox NEO-M9N` | `JSPI` + `UART` | ₹3,600 |
 | **Field Power & Enclosure** | 4S LiFePO4 ($12.8\text{ V}$) Pack + TI `INA226` Monitor + IP67 Polycarbonate Tactical Case | `PWR` ($7\text{–}24\text{V}$) | ₹3,200 |
-| **Total Prototype BOM** | **Complete 3-in-1 Handheld / Drone / Swarm Rescue Pod** *(96% CapEx Reduction)* | **All 10 UNO Q Tags** | **₹18,500** |
+| **Total Prototype BOM** | **Complete 3-in-1 Handheld / Drone / Swarm Rescue Pod** *(96% CapEx Reduction)* | **All 10 UNO Q Tags** | **₹24,500** |
 
 ---
 
