@@ -1,0 +1,29 @@
+name: Q-Napse Dual-Brain CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify-qrb2210-algorithms:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Q-Napse Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11 (Qualcomm QRB2210 Target)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Signal Processing & ML Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy scikit-learn cbor2 fastapi uvicorn
+
+      - name: Run 802.11 IE De-Randomizer & FrFT Unit Verification
+        run: |
+          python mpu-qrb2210/rf_engine/ie_dbscan_cluster.py --self-test
+          python mpu-qrb2210/acoustic_frft/frft_chirp_matched_filter.py --self-test
